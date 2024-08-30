@@ -20,27 +20,24 @@
   margin-right: 10px;
 }
 
-.links {
+.links > ul {
   display: flex;
-  /* background-color: aqua; */
-  padding: 25px;
-  list-style: none;
-  justify-content: start;
+  gap: 15px;
 }
 
-.links > a {
-  text-decoration: none;
-  color: black;
-  margin-right: 25px;
+.links > ul > li {
   display: flex;
+  gap: 2px;
   align-items: center;
-  gap: 10px;
-  font-weight: 600;
-  color: rgb(78, 78, 78);
+  justify-content: center;
 }
 
-.links > a:hover {
-  color: rgb(244, 135, 10);
+.links > ul > li:hover {
+  color: #e89b16;
+}
+
+Link {
+  text-decoration: none;
 }
 
 button {

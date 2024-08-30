@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Body from "./Components/Body";
 
+
 // !Props Concept
 // 1-->way
 // ? PAssing the props in parameter  and give property name to where we want to pass the data dynamically.--->    <h3 className="heading">{props.resName}</h3>

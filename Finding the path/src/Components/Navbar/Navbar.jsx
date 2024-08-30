@@ -8,6 +8,7 @@ import {
   RiShoppingCart2Line,
   RiUser3Line,
 } from "@remixicon/react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // const [btnLogin, setBtnLogin] = useState("Login");
@@ -24,28 +25,35 @@ const Navbar = () => {
         <h3>Other</h3>
       </div>
       <div className="links">
-        <a href="">
-          Swiggy Corporate
-          <RiTv2Line />
-        </a>
-
-        <a href="">
-          Search
-          <RiSearch2Line />
-        </a>
-        <a href="">
-          Offers
-          <RiDiscountPercentLine />
-        </a>
-        <a href="">
-          Help
-          <RiLifebuoyLine />
-        </a>
-
-        <a href="">
-          Cart
-          <RiShoppingCart2Line />
-        </a>
+        <ul>
+          <li>
+            Swiggy Corporate
+            <RiTv2Line />
+          </li>
+          <li>
+            Search
+            <RiSearch2Line />
+          </li>
+          <li>
+            Offers
+            <RiDiscountPercentLine />
+          </li>
+          <li>
+            Help
+            <RiLifebuoyLine />
+          </li>
+          <li>
+            Cart
+            <RiShoppingCart2Line />
+          </li>
+          <li>
+            <Link to="/about">About Us</Link>
+          </li>
+          <li>
+            {" "}
+            <Link to="/contact">Contact Us</Link>
+          </li>
+        </ul>
       </div>
       <button
         onClick={() => {
